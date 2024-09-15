@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">Lista de Tarefas</h1>
+        <div class="flex mb-4">
+            <input type="text" id="nova-tarefa" placeholder="Adicionar nova tarefa..." class="flex-grow p-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button onclick="adicionarTarefa()" class="ml-2 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition">Adicionar</button>
+        </div>
+        <ul id="lista-tarefas" class="space-y-3"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
